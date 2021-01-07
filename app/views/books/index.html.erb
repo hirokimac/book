@@ -21,7 +21,7 @@
           <%= link_to "Edit", edit_book_path(book) %>
         </td>
         <td>
-          <%= link_to "destroy", "books/{(book.id}", method: :delete %>
+          <%= link_to "destroy", destroy_book_path(book.id), method: :delete,  "data-confirm" => "本当に削除しますか？" %>
         </td>
       </tr>
       <% end %>
