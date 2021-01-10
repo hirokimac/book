@@ -23,14 +23,20 @@
 
 <% else %>
 
-  <h4>Title</h4>
+  <label>Title</label>
   <%= f.text_field :title %>
 
-  <h4>Body</h4>
+  <label>Body</label>
   <%= f.text_area :body %>
 
+<div class="actions">
   <%= f.submit 'Update Book' %>
+  </div>
 
   <% end %>
 
   <% end %>
+
+<%= link_to "Show" , book_path(@book) %>
+|
+<%= link_to "Back" , books_path %>
